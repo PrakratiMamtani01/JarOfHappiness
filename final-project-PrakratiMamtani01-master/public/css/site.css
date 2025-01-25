@@ -1,0 +1,96 @@
+* {
+	margin: 8px;
+}
+
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+}
+
+.home-link>a {
+	text-decoration: none;
+}
+
+
+.home-link {
+	position: absolute;
+	top: 0.25em;
+	left: 0.75em;
+	font-size: x-large;
+	color: #FD9B7B;
+}
+
+
+.login-status {
+	position: absolute;
+	top: 0.25em;
+	right: 0.75em;
+	display: flex;
+	text-align: center;
+}
+
+button,
+input[type="submit"] {
+	background-color: #1E517B;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: white;
+	border-radius: 12px;
+	padding: 10px 20px;
+	border: 2px solid #1E517B;
+	cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background-color: white;
+	color: #1E517B;
+}
+
+.content {
+	/* position: relative; */
+	padding: 20px;
+}
+
+#home {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	width: 100vw;
+}
+
+.jar {
+	display: flex;
+	justify-self: stretch;
+}
+
+#note {
+	position: fixed;
+	top: 25%;
+	left: 0px;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(219, 201, 12, 0.895);
+	color: white;
+	text-align: center;
+}
+
+#note>h1 {
+	position: relative;
+	padding-top: calc(30vh - 5rem);
+}
+
+.error,
+.timer {
+	color: red;
+}
+
+.timer {
+	text-align: center;
+}

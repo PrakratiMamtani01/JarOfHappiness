@@ -1,0 +1,35 @@
+<h2>Add Item</h2>
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="">
+    <div>
+        <label for="content">Content:</label>
+        <input type="text" name="content" value="">
+    </div>
+
+    <div>
+        <label for="author">Artist/Author:</label>
+        <input type="text" name="author" value="">
+
+    </div>
+
+
+    <label for="category">Choose a Category:</label>
+    <select name="category" id="category">
+        <option value="song">Song</option>
+        <option value="quote">Quote</option>
+    </select>
+
+
+    <label for="mood">Choose a mood:</label>
+    <select name="mood" id="mood">
+        <option value="happy">Happy</option>
+        <option value="excited">Excited</option>
+        <option value="anger">Angry</option>
+        <option value="focus">Inspirational</option>
+    </select>
+
+    <input type="submit" value="Add">
+
+</form>
