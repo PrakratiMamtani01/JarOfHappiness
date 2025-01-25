@@ -1,0 +1,30 @@
+<h2>Sign-up</h2>
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="register">
+	<div>
+		<label for="username">Username:</label>
+		<input type="text" name="username" value="">
+	</div>
+	<div>
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="">
+	</div>
+	<div>
+		<label>Choose your Category:</label>
+
+		<br>
+
+		<input type="checkbox" id="songs" name="category" value="song">
+		<label for="songs">Songs</label>
+
+		<br>
+
+		<input type="checkbox" id="quotes" name="category" value="quote">
+		<label for="quotes">Quotes</label>
+
+
+	</div>
+	<div><input type="submit" value="Sign-up"></div>
+</form>
